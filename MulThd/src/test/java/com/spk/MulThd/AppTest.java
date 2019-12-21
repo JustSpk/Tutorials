@@ -1,4 +1,4 @@
-package com.spk.MultiThreading;
+package com.spk.MulThd;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
