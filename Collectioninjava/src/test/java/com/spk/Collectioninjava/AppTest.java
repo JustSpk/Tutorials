@@ -1,4 +1,4 @@
-package com.spk.Collections;
+package com.spk.Collectioninjava;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

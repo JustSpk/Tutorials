@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.spk</groupId>
-  <artifactId>Collections</artifactId>
+  <artifactId>Collectioninjava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Collections</name>
+  <name>Collectioninjava</name>
   <url>http://maven.apache.org</url>
 
   <properties>
