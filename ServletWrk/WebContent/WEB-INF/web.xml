@@ -16,4 +16,13 @@
 	<servlet-name>xyz</servlet-name>
 	<url-pattern>/sq</url-pattern>
 </servlet-mapping>
+<context-param>
+	<param-name>name</param-name>
+	<param-value>Spk</param-value>
+</context-param>
+<context-param>
+	<param-name>phone</param-name>
+	<param-value>Oppo</param-value>
+</context-param>
+
 </web-app>
