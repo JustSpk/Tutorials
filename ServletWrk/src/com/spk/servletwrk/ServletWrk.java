@@ -3,7 +3,7 @@ package com.spk.servletwrk;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletContext;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,14 +13,13 @@ public class ServletWrk extends HttpServlet {
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException, ServletException {
 		
 		
-//		Servlet Context Example
+//		Servlet Config Example
 		
-		ServletContext ctx=req.getServletContext();
-		String name=ctx.getInitParameter("name");
-		String Phone=ctx.getInitParameter("phone");
-		
+		ServletConfig cg=getServletConfig();
+		String name=cg.getInitParameter("name");
+				
 		PrintWriter out=res.getWriter();
-		out.println("Hi "+name+" You're using "+Phone);
+		out.println("Hi "+name);
 	}
 	
 }

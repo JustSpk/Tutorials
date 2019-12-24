@@ -3,6 +3,11 @@
 <servlet>
 	<servlet-name>abc</servlet-name>
 	<servlet-class>com.spk.servletwrk.ServletWrk</servlet-class>
+	
+	<init-param>
+	<param-name>name</param-name>
+	<param-value>Pradeep</param-value>
+</init-param>
 </servlet>
 <servlet-mapping>
 	<servlet-name>abc</servlet-name>
@@ -24,5 +29,4 @@
 	<param-name>phone</param-name>
 	<param-value>Oppo</param-value>
 </context-param>
-
 </web-app>
