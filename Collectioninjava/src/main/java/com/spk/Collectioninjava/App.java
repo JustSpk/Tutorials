@@ -6,16 +6,14 @@ public class App
 {
     public static void main( String[] args )
     {
-    	LinkedList al=new LinkedList();
-    	al.add("one");
-    	al.add("two");
-    	al.add("three");
-    	al.add("four");
-    	
-    	al.remove("one");
-    	Iterator itr=al.iterator();
+    	Collection value=new ArrayList();
+    	value.add(7);
+    	value.add("spk");
+    	value.add(9.8);
+    	Iterator itr=value.iterator();
     	while(itr.hasNext()) {
     		System.out.println(itr.next());
+    		System.out.println();
     	}
     }
 }
