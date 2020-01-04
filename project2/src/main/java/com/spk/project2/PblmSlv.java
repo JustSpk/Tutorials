@@ -4,29 +4,20 @@ import java.util.Scanner;
 
 public class PblmSlv {
 	public static void main(String args[]) {
-		System.out.println("    @");
-		for(int i=1;i<=3;i++) {
-			for(int j=3;j>=i;j--) {
-				System.out.print(" ");
-			}
-			System.out.print("@");
-			for(int k=1;k<=i;k++) {
-				System.out.print("  ");
-			}
-			System.out.print("@");
-			System.out.println();
+		Scanner scn=new Scanner(System.in);
+		int a=scn.nextInt();
+		boolean isPrime=true;
+		for(int i=2;i<=a/2;i++) {
+			if(a%i==0) {
+				isPrime=false;
+				break;
+			}	
 		}
-		for(int i=2;i>=1;i--) {
-			for(int j=3;j>=i;j--) {
-				System.out.print(" ");
-			}
-			System.out.print("@");
-			for(int k=1;k<=i;k++) {
-				System.out.print("  ");
-			}
-			System.out.print("@");
-			System.out.println();
+		if(isPrime) {
+			System.out.println("It is a Prime Number");
 		}
-		System.out.println("    @");
+		else {
+			System.out.println("It is not a Prime Number");
+		}
 	}
 }
