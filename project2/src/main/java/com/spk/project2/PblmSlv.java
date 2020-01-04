@@ -6,18 +6,12 @@ public class PblmSlv {
 	public static void main(String args[]) {
 		Scanner scn=new Scanner(System.in);
 		int a=scn.nextInt();
-		boolean isPrime=true;
-		for(int i=2;i<=a/2;i++) {
-			if(a%i==0) {
-				isPrime=false;
-				break;
-			}	
+		int result=1;
+		int q=a/10;
+		while(q!=0) {
+			q=q/10;
+			result++;
 		}
-		if(isPrime) {
-			System.out.println("It is a Prime Number");
-		}
-		else {
-			System.out.println("It is not a Prime Number");
-		}
+		System.out.println(result);
 	}
 }
